@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titulo de pagina -->
+    <title> MUSE ║ Home </title>
+    <link rel="icon" href="/img/logoTransparente.ico">
+    
+    <!-- Link de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Link de estilos css -->
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/786fefc0b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navegador pagina -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="navbarCorrection container-fluid">
+                <a class="navbar-brand navText" href="shop.html"> Shop </a>
+                <a class="navbar-brand navText" href="gallery.html"> Gallery </a>
+                <li class="nav-item dropdown responsiveNav">
+                    <div class="dropdown navBarDropdown">
+                        <button class="btn btn-secondary dropdown-toggle bg-dark border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="imgNav navIcon" src="../img/iconsResource/list.png" alt="Navegacion en responsive">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="tour.html"> Tour </a></li>
+                          <li><a class="dropdown-item" href="shop.html"> Shop </a></li>
+                          <li><a class="dropdown-item" href="gallery.html"> Gallery </a></li>
+                          <li><a class="dropdown-item" href="music.html"> Music </a></li>
+                        </ul> 
+                    </div>
+                </li>
+                <a href="../index.html">
+                    <img class="imgNav" src="../img/logoPrincipal.png" alt="Logo Muse de barra de navegacion">
+                </a>
+                <a class="nav-link responsiveNav" href="contact.html">
+                    <img class="imgNav navIcon responsiveNav" src="../img/iconsResource/mail.png" alt="Navegacion en responsive">
+                </a>
+                </a>
+                <a class="navbar-brand navText" href="music.html"> Music </a>
+                <a class="navbar-brand navText" href="tour.html"> Tour </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="borderForm">
+            <div class="container-fluid">a
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0 text-white text-uppercase"> Reason for contact </legend>
+                    <div class="col-sm-10 col-xl-8 d-sm-flex flex-row flex-wrap align-items-center justify-content-center">
+                        <div class="form-check mx-sm-2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label text-white" for="gridRadios1">
+                            General
+                            </label>
+                        </div>
+                        <div class="form-check mx-sm-2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label  text-white" for="gridRadios2">
+                            Shows
+                            </label>
+                        </div>
+                        <div class="form-check mx-sm-2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                            <label class="form-check-label text-white" for="gridRadios3">
+                            Shop
+                            </label>
+                        </div>
+                        <div class="form-check mx-sm-2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                            <label class="form-check-label text-white" for="gridRadios4">
+                            Suggestion
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>                
+                <div class="row mb-3">
+                    <label for="inputName3" class="col-sm-2 col-form-label text-white">Name</label>
+                    <div class="col-sm-10 col-md-8">
+                        <input type="name" class="form-control col-sm11" id="inputName3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label text-white">Email</label>
+                    <div class="col-sm-10 col-md-8">
+                        <input type="email" class="form-control col-sm11" id="inputEmail3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputCountry3" class="col-sm-2 col-form-label text-white">Country</label>
+                    <div class="col-sm-10 col-md-8">
+                        <input type="text" class="form-control col-sm11" id="inputCountry3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="input-group d-flex flex-column flex-sm-row">
+                        <div class="col-12 col-md-2">
+                            <label for="message" class="col-form-label text-white">Your message here</label>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <textarea class="form-control rounded-1" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center d-flex justify-content-around">
+                    <button type="submit" class="btn btn-primary m-sm-5 bg">Send</button>
+                    <button type="reset" class="btn btn-primary m-sm-5">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" target="blank" href="https://www.facebook.com/muse" role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+        
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" target="blank" href="https://twitter.com/muse" role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+        
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" target="blank" href="https://www.instagram.com/muse/?hl=es" role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+        
+                <!-- Youtube -->
+                <a class="btn btn-outline-light btn-floating m-1" target="blank" href="https://www.youtube.com/channel/UCGGhM6XCSJFQ6DTRffnKRIw" role="button"
+                ><i class="fab fa-youtube"></i
+                ></a>
+        
+                <!-- TikTok -->
+                <a class="btn btn-outline-light btn-floating m-1" target="blank" href="https://www.tiktok.com/@muse?lang=es" role="button"
+                ><i class="fab fa-tiktok"></i
+                ></a>
+            </section>
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright: Santiago Olivera
+    </div>
+  </footer>
+
+    <!-- Link js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

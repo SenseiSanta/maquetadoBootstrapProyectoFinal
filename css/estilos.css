@@ -1,0 +1,242 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: #212529;
+}
+
+nav{
+    padding: 0px 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    padding: 40px 80px;
+}
+
+textarea.form-control{
+    margin-left: 5px;
+}
+
+.btn-primary{
+    background-color: #3e065fc7;
+    border: rgb(49, 0, 68) solid 3px;
+}
+
+.btn-primary:hover{
+    background-color: #ffffff50;
+    border: black solid 3px;
+}
+
+.bg-light{
+    background-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+select{
+    width: 100px;
+}
+
+/* --- HEADER --- */
+
+    header{
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid black;
+        z-index: 1;
+    }
+
+    /* Correccion del logo en la barra de navegacion */
+    .imgNav{
+        width: 100px;
+    }
+
+    /* Iconos de navegacion */
+    .navIcon{
+        width: 30px;
+    }
+
+    /* Ubicacion de los items en la navegacion */
+    .navbar>.navbarCorrection{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Desaparecer menu responsive */
+    .responsiveNav{
+        display: none;
+    }
+
+/* --- /HEADER --- */
+
+
+
+/* --- CONFIGURACION DEL BOTON DE CONTACTO --- */
+
+    /*Caja contenedora del boton de contacto */
+    .contactButtonBox{
+        position: fixed;
+        margin-bottom: 35px;
+        margin-right: 35px;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Arreglo del sobre en el boton de contacto - NO TOCAR */
+        .fixedLetter {
+            font-size: 1.3rem;
+            padding-bottom: 3px;
+            padding-left: 3px;
+            text-decoration: none;
+        }
+
+    /* Formato del boton de contacto */
+        .contactButton{
+            display: flex;
+            width: 140px;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color: #51005a4b;
+            border: 5px solid #3b005ae3;
+            border-radius: 30px 30px 30px 30px;
+            font-family: 'Bebas Neue', cursive;
+}
+
+
+
+/* --- INDEX --- */
+
+    /* Imagen principal */
+    .imgMain{
+        background-image: url(../img/conciertoImage.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .snippetImage{
+        width: 100px;
+        height: 100px;
+    }
+
+    .cajasSnippet{
+        padding: 30px;
+    }
+/* --- /INDEX --- */
+
+
+
+/* --- CONTACT --- */
+
+    .borderForm{
+        margin: 20px;
+        border: 4px rgba(151, 151, 151, 0.658) solid;
+    }
+/* --- /CONTACT --- */
+
+
+.tourMainHeight{
+    height: 600px;
+}
+
+.fitImage{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    transition-duration: 1s;
+}
+
+.scaleElement:hover{
+    transform: scale(1.02);
+    transition-duration: 1s;
+}
+
+.tourDateText{
+    font-size: 32px;
+    color: white;
+}
+
+.tourFilterResponsive{
+    display: none;
+}
+
+.inputDefaultWidth{
+    width: 100px;
+}
+
+/* MEDIA QUERIS */
+@media only screen and (max-width: 1200px) {
+    .responsiveTourInfo{
+        height: 100% !important;
+    }
+
+    .noImageTour{
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    nav{
+        padding: 0;
+    }
+    
+    .snippetImage{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+    html{
+        font-size: 12px;
+    }
+
+    .noDiv480{
+        display: none!important;
+    }
+
+    .tourFilterResponsive{
+        display: flex;
+
+    }
+
+    /* --- HEADER --- */
+        .responsiveNav{
+            display: inline;
+        }
+
+        .navText{
+            display: none;
+        }
+    /* --- /HEADER --- */
+
+
+
+    /* --- CONFIGURACION DEL BOTON DE CONTACTO --- */
+
+    .contactButtonBox{
+        display: none;
+    }
+    /* --- /CONFIGURACION DEL BOTON DE CONTACTO --- */
+
+
+
+    /* --- CONTACT --- */
+    .borderForm{
+        margin: 0;
+    }
+
+    form{
+        margin: 20px;
+        padding: 20px 10px;
+    }
+    /* --- /CONTACT --- */
+}
